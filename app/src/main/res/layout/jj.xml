@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10">
+        <TextView android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="7"
+            android:text="test"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            android:id="@+id/hanNom"
+            android:background="@drawable/style_nad_list"
+            android:elevation="5dp"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal">
+        </TextView>
+        <TableLayout android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:weightSum="2"
+            android:background="@drawable/style_nad_list"
+            android:elevation="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="AmV"
+                    android:textSize="20dp"
+                    android:id="@+id/amV"
+                    android:layout_weight="1">
+                </TextView>
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="cvk"
+                    android:textSize="15dp"
+                    android:id="@+id/cachVietK"
+                    android:singleLine="true"
+                    android:layout_weight="1">
+                </TextView>
+            </TableRow>
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="nghia"
+                android:textSize="20dp"
+                android:singleLine="true"
+                android:id="@+id/mean"
+                android:layout_weight="1">
+            </TextView>
+        </TableLayout>
+
+    </TableRow>
+</LinearLayout>

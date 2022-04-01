@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Hán Nôm tự điển</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_data">Không có dữ liệu </string>
+    <string name="no_input">"Hãy nhập gì đấy !!!"</string>
+    <string name="coppied_to_clipbord">Đã sao chép vào khay nhớ tạm !</string>
+</resources>
