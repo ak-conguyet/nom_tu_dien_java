@@ -9,7 +9,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Build;
-import android.text.Editable;
 import androidx.annotation.RequiresApi;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -24,6 +23,7 @@ public class sql extends SQLiteOpenHelper {
     private static String DB_NAME = "db.db";//the extension may be .sqlite or .db
     private String DB_PATH ;
     public SQLiteDatabase myDataBase;
+
     public sql(Context context, int i) throws IOException {
         super(context,DB_NAME,null,1);
         this.mycontext=context;
@@ -69,9 +69,7 @@ public class sql extends SQLiteOpenHelper {
 
         InputStream myinput = mycontext.getAssets().open(DB_NAME);
 
-
         String outfilename = DB_PATH + DB_NAME;
-
 
         OutputStream myoutput = new FileOutputStream(outfilename);
 
